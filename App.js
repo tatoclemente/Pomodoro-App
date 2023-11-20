@@ -1,4 +1,4 @@
-import { StyleSheet, Platform, Text, View, Button, SafeAreaView, TouchableOpacity } from 'react-native';
+import { StatusBar, StyleSheet, Platform, Text, View, SafeAreaView, TouchableOpacity } from 'react-native';
 import { useEffect, useState } from 'react';
 import Header from './src/components/Header';
 import Timer from './src/components/Time';
@@ -72,6 +72,7 @@ export default function App() {
           </Text>
         </TouchableOpacity>
       </View>
+      <StatusBar backgroundColor={colors[currentTime]} />
     </SafeAreaView>
   );
 }
